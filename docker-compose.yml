@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  server :
+    build: './alignment-service'
+    image: springio/alignment
+    ports:
+      - "8080:8080"
+
+  client:
+    build: './alignment-ui'
+    image: springio/alignment-ui
+    ports:
+      - "9898:4200"

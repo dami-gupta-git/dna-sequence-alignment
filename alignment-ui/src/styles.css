@@ -1,0 +1,126 @@
+/* Global Styles */
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + *  {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 4px;
+  border: 1px solid #BDBDBD;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.buttons{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.buttonReverse{
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #3297ea;
+  color: white;
+  border: 5px;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width:320px;
+}
+
+/* Button */
+.button, button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  color: #3297ea;
+  border: 5px;
+  margin-left: 8px;
+  width:80px;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Enter sequence section */
+app-enter-sequence {
+  width: 100%;
+  height: 195px;
+  background-color: #3297ea;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+app-enter-sequence h1 {
+  color: white;
+  margin: 0;
+}
+
+app-enter-sequence h3 {
+  color: white;
+  margin: 0;
+}

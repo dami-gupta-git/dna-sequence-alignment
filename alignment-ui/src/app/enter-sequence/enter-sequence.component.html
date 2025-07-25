@@ -1,0 +1,16 @@
+<!-- Pane where user submits sequence -->
+<h1> Alignment Coding Challenge</h1>
+<h3> Enter your sequence </h3>
+
+<a [routerLink]="['/']">
+</a>
+<input type="text"  id="sequence" size="100"
+       required
+       [(ngModel)]="sequence" name="sequence"
+       #name="ngModel">
+<div class="buttons">
+<button (click)="submitSequence(sequence)">Submit</button>
+<button (click)="clearInput()">Clear</button>
+</div>
+
+

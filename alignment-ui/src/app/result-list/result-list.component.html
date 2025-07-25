@@ -1,0 +1,22 @@
+<!-- Pane containing alignment results -->
+<div>
+    <b>Sequence Alignment Results</b>
+    <button class="buttonReverse" (click)="clearResults()">Clear Results ( Current And Pending)</button>
+</div>
+<hr>
+
+<!-- List of alignment matches -->
+<div class="wrap" *ngFor="let result of globals.matches; index as resultId" >
+    <span> <b> Sequence Query </b> : {{result.query}}  </span>
+    <div *ngIf="result.assembly !== null">
+        <b>Assembly</b> : {{result.assembly}} <br>
+        <b>Protein name</b> : {{result.proteinId}}<br>
+        <b>Position</b> : {{result.position}}<br>
+    </div>
+    <div *ngIf="result.assembly == null">
+        No match for this sequence
+    </div>
+    <br>
+    <hr>
+
+</div>
