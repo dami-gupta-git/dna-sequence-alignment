@@ -1,5 +1,7 @@
 # DNA Sequence Alignment Web Application
 
+*Note: This is a very old project and may need updates to work properly.*
+
 ## Introduction
 This project is a web-based application designed for aligning user-submitted DNA sequences (comprising 'A', 'T', 'G', and 'C') against a predefined set of protein sequences from a list of NCBI assemblies. The application displays detailed alignment results and maintains a persistent history of query submissions specific to each user's machine. The supported assemblies are:
 - NC_000852
